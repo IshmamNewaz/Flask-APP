@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+        <title>Welcome Stranger!</title>
+
+    </head>
+    <body>
+        <h1>Live Streaming</h1>
+        <div>
+          <img src="{{ url_for('video') }}" width="30%">
+        </div>
+    <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    </body>
+</html>
