@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Welcome Stranger!</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <!-- Bootstrap CSS -->
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+        <title>Welcome Stranger!</title>
+
     </head>
     <body>
         
-    <form action="/submit" method="POST">
-        <label for="fname">Math Marks:</label><br>
-        <input type="text" id="english" name="english" value=""><br>
-
-        <label for="lname">Bangla Marks</label><br>
-        <input type="text" id="bangla" name="bangla" value=""><br>
-
-        <label for="lname">Math Marks:</label><br>
-        <input type="text" id="math" name="math" value=""><br><br>
-
-        <input type="submit" value="Submit">
-    </form> 
+        <form action="/submit" method="POST">
+            <div class="mb-3">
+              <label for="Mmarks" class="form-label">English Marks:</label><br>
+              <input type="text" class="form-control" id="english" name="english" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="BMarks" class="form-label">Bangla Marks</label>
+              <input type="text" class="form-control" id="bangla" name="bangla" >
+            </div>
+            <div class="mb-3">
+                <label for="BMarks" class="form-label">Math Marks</label>
+                <input type="text" class="form-control" id="math" name="math">
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>   
   
     <p>Note! Clicking Goes to: </p>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
