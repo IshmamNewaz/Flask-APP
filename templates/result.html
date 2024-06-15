@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Result Page</title>
+    </head>
+    <body>
+        {% if score>=50 %}
+        <h1>Passed, Mark {{score}}</h1>
+        {% else %}
+        <h1>Failed, Mark {{score}}</h1>
+        {% endif %}
+    </body>
+</html>
